@@ -49,8 +49,8 @@ body {
   font-size: 7rem;
   text-align: center;
   text-transform: uppercase;
-  -webkit-animation: colorSwitch infinite alternate 5s;
-          animation: colorSwitch infinite alternate 5s;
+  -webkit-animation: colorSwitch infinite alternate 2s;
+          animation: colorSwitch infinite alternate 2s;
 }
 
 @-webkit-keyframes colorSwitch {
