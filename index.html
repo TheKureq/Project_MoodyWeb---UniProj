@@ -7,41 +7,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UniversityProject</title>
     <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
 
+    <script src="https://unpkg.com/feather-icons"></script>
 </head>
 
 <body>
-
+    
 
     <!-- NAV SECTION -->
-    <nav id="link">
-        <ul>
+    <nav id="link" class="nav">
+        <ul class="nav__ul">
             <li><a class="navi" href="index.html">HOMEPAGE</a></li>
-            <li><a class="navi" href="about.html">ABOUT US</a></li>
-            <li><a class="navi" href="index.html"><div class="moody"></div></a></li>
+            <li><a class="navi" href="about.html">ABOUT PROJECT</a></li>
+            <li><a class="navi" href="index.html">
+                    <div class="moody"></div>
+                </a></li>
             <li><a class="navi" href="login.html">CONTROL PANEL</a></li>
             <li><a class="navi" href="gallery.html">GALLERY</a></li>
         </ul>
+
+        <div class="loginStatus">
+            <div class="dot">
+                <div class="dottest"></div>
+            </div>
+        </div>
     </nav>
 
 
     <!-- HERO SECTION -->
     <section id="hero" class="hero">
-        <div class="slider">
-            <img src="img/moody-model.png">
-            <div class="hero--shadow"></div>
+        <div class="hero__slider">
+            <div class="hero__card hero__card--1"></div>
+            <div class="hero__card hero__card--2"></div>
+            <div class="hero__card hero__card--3"></div>
+            <div class="hero__card hero__card--4"></div>
+            <div class="hero__card hero__card--5"></div>
         </div>
+        <!-- <div class="hero--shadow"></div> -->
     </section>
 
 
     <!-- MAIN SECTION -->
     <section id="main" class="main">
-        <div class="wall" style="">
+        <div class="shorts">
             <div class="container">
                 <div class="section-title">Shorts 🩳
                 </div>
-    
+                <div class="shorts__box">
+                    <div class="shorts__card">
+                        <div class="shorts__img"></div>
+                        <div class="shorts__title"></div>
+                        <div class="shorts__info"></div>
+                    </div>
+                    <div class="shorts__card">
+                        <div class="shorts__img"></div>
+                        <div class="shorts__title"></div>
+                        <div class="shorts__info"></div>
+                    </div>
+                    <div class="shorts__card">
+                        <div class="shorts__img"></div>
+                        <div class="shorts__title"></div>
+                        <div class="shorts__info"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -50,8 +82,21 @@
     <!-- CONTACT SECTION -->
     <section id="contact" class="contact">
         <div class="container">
-            <div class="section-title">Contact</div>
-
+            <div class="section-title">Developers</div>
+            <div class="contact__box">
+                <div class="contact__card--one contact__card">
+                    <h3>Michal Kurek <i data-feather="tool"></i></h3>
+                    <p>+48 000 000 000 <i data-feather="smartphone"></i></p>
+                    <p>email@gmail.com <i data-feather="at-sign"></i></p>
+                    <a href="https://github.com/TheKureq">Github <i data-feather="github"></i></a>
+                </div>
+                <div class="contact__card--two contact__card">
+                    <h3>Samir Abu Safieh <i data-feather="cpu"></i></h3>
+                    <p>+48 000 000 000 <i data-feather="smartphone"></i></p>
+                    <p>email@gmail.com <i data-feather="at-sign"></i></p>
+                    <a href="https://github.com/Samir420692137">Github <i data-feather="github"></i></a>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -65,7 +110,16 @@
 
     </footer>
 
+    <script>
+        feather.replace()
+    </script>
+
+
     <script src="./js/main.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="../js/slicksettings.js"></script>
 </body>
 
 </html>

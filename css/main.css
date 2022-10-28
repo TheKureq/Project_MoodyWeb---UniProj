@@ -16,7 +16,7 @@ body {
   font-size: 1.6rem;
   background-color: #333;
   color: #fff;
-  font-family: 'Silkscreen', cursive;
+  font-family: "Silkscreen", cursive;
   overflow-x: hidden;
 }
 
@@ -25,13 +25,9 @@ body::-webkit-scrollbar {
 }
 
 .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: 100vw;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  max-width: 1000px;
+  margin: auto;
   padding: 5rem;
 }
 
@@ -44,27 +40,41 @@ body::-webkit-scrollbar {
   padding: 2rem;
 }
 
-.wall {
-  width: 100vw;
-  height: 100vh;
-  background-color: #ebb551;
-  color: #333;
-}
-
 nav {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 110;
+  z-index: 200;
+  width: 100vw;
+  height: auto;
 }
-
+nav .loginStatus {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 150px;
+  z-index: 151;
+}
+nav .loginStatus .dot {
+  position: absolute;
+  right: 3%;
+  top: 50%;
+}
+nav .loginStatus .dot .dottest {
+  height: 20px;
+  width: 20px;
+  -webkit-transform: rotate(45deg) translateY(-5px);
+          transform: rotate(45deg) translateY(-5px);
+  background-color: gray;
+}
 nav ul {
   position: absolute;
   top: 0;
   left: 0;
-  height: 100px;
   width: 100vw;
-  padding-bottom: 50px;
+  padding-top: 30px;
+  padding-bottom: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -74,15 +84,14 @@ nav ul {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  margin-top: 50px;
   list-style: none;
   z-index: 100;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
-
 nav ul li {
   position: relative;
 }
-
 nav ul li a {
   text-decoration: none;
   font-size: 1.2rem;
@@ -91,14 +100,12 @@ nav ul li a {
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-
 nav ul li a:hover {
-  color: #ce8908;
+  color: rgb(206, 137, 8);
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   letter-spacing: 5px;
 }
-
 nav ul li .moody {
   border-radius: 50%;
   width: 50px;
@@ -107,39 +114,77 @@ nav ul li .moody {
   background-position: center;
   background-position-y: -2%;
   background-size: cover;
-  -webkit-box-shadow: 0px 0px 10px 1px #333;
-          box-shadow: 0px 0px 10px 1px #333;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-
 nav ul li .moody:hover {
-  -webkit-box-shadow: 0px 0px 15px 1px #ce8908;
-          box-shadow: 0px 0px 15px 1px #ce8908;
+  -webkit-box-shadow: 0px 0px 15px 1px rgb(206, 137, 8);
+          box-shadow: 0px 0px 15px 1px rgb(206, 137, 8);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .hero {
   position: relative;
   z-index: 80;
-}
-
-.hero .slider {
   width: 100vw;
   height: 100vh;
 }
-
-.hero .slider img {
-  position: absolute;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+.hero .slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
 }
-
-.hero .slider .hero--shadow {
+.hero .slick-dots > * {
+  margin: 20px;
+  margin-top: -88px;
+  width: 25px;
+  height: 25px;
+  border: none;
+  background-color: #333;
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+  -webkit-transform: scale(1) rotate(45deg);
+          transform: scale(1) rotate(45deg);
+  z-index: 150;
+}
+.hero .slick-dots > *:hover {
+  -webkit-transform: scale(1.2) rotate(-90deg);
+          transform: scale(1.2) rotate(-90deg);
+  background-color: rgb(206, 137, 8);
+}
+.hero .slick-dots > * > button {
+  opacity: 0;
+}
+.hero .hero__slider {
+  position: relative;
+}
+.hero .hero__slider .hero__card {
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+.hero .hero__slider .hero__card--1 {
+  background-image: url("../img/moody-model.png");
+}
+.hero .hero__slider .hero__card--2 {
+  background-image: url("../img/Screenshot_3.png");
+}
+.hero .hero__slider .hero__card--3 {
+  background-image: url("../img/Screenshot_4.png");
+}
+.hero .hero__slider .hero__card--4 {
+  background-image: url("../img/Screenshot_5.png");
+}
+.hero .hero__slider .hero__card--5 {
+  background-image: url("../img/Screenshot_6.png");
+}
+.hero--shadow {
   position: absolute;
   top: 0;
   left: 0;
@@ -149,11 +194,69 @@ nav ul li .moody:hover {
   z-index: 90;
 }
 
+.shorts {
+  width: 100vw;
+  height: auto;
+  padding: 2rem;
+  background-color: rgb(235, 181, 81);
+}
+
 .contact {
   position: relative;
   background-color: #333;
-  width: 100vh;
-  height: 500px;
+  width: 100vw;
+}
+.contact__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+.contact__box .contact__card {
+  margin: 2rem;
+  padding: 2rem;
+  font-size: 2rem;
+  width: 50%;
+}
+.contact__box .contact__card > * {
+  padding: 1rem;
+  margin: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.contact__box .contact__card a {
+  text-decoration: none;
+  margin: 1rem 1rem;
+  padding: 1rem 1rem;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.contact__box .contact__card a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #fff;
+}
+.contact__box .contact__card--one {
+  color: #fff;
+}
+.contact__box .contact__card--one a {
+  color: rgb(18, 94, 215);
+}
+.contact__box .contact__card--two {
+  color: #fff;
+}
+.contact__box .contact__card--two a {
+  color: #8f0dc2;
 }
 
 footer {
@@ -164,11 +267,10 @@ footer {
       -ms-flex-align: end;
           align-items: flex-end;
 }
-
 footer .footer {
   width: 60vw;
   color: #fff;
-  background-color: #0c0c0c;
+  background-color: rgb(12, 12, 12);
   text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -192,5 +294,4 @@ footer .footer {
   footer .footer {
     font-size: 1.6rem;
   }
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

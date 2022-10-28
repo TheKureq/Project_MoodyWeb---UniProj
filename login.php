@@ -3,7 +3,7 @@
     $login = $_POST['login'];
     $password = $_POST['password'];
 
-// łączenie z bazom
+// łączenie z bazą
     $conn = new mysqli("localhost", "root", "", "test");
     if($conn->connect_error)
     {
