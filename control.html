@@ -7,41 +7,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UniversityProject</title>
     <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/pumpkin.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
 
+    <script src="https://unpkg.com/feather-icons"></script>
 </head>
 
 <body>
 
 
     <!-- NAV SECTION -->
-    <nav id="link">
-        <ul>
+    <nav id="link" class="nav">
+
+
+        <ul class="nav__ul--mobile">
             <li><a class="navi" href="index.html">HOMEPAGE</a></li>
-            <li><a class="navi" href="about.html">ABOUT US</a></li>
-            <li><a class="navi" href="index.html"><div class="moody"></div></a></li>
+            <li><a class="navi" href="about.html">ABOUT PROJECT</a></li>
             <li><a class="navi" href="login.html">CONTROL PANEL</a></li>
             <li><a class="navi" href="gallery.html">GALLERY</a></li>
         </ul>
+
+        <div class="nav__mobile">
+            <button class="menu"
+                onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+                aria-label="Main Menu">
+                <svg width="64" height="64" viewBox="0 0 100 100">
+                    <path class="line line1"
+                        d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                    <path class="line line2" d="M 20,50 H 80" />
+                    <path class="line line3"
+                        d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                </svg>
+            </button>
+
+
+        </div>
+
+
+
+        <ul class="nav__ul">
+            <li><a class="navi" href="index.html">HOMEPAGE</a></li>
+            <li><a class="navi" href="about.html">ABOUT PROJECT</a></li>
+            <li><a class="navi" href="index.html">
+                    <div class="moody"></div>
+                </a></li>
+            <li><a class="navi" href="login.html">CONTROL PANEL</a></li>
+            <li><a class="navi" href="gallery.html">GALLERY</a></li>
+
+
+        </ul>
+
+        <div class="loginStatus">
+            <div class="dot">
+                <div class="dottest"></div>
+            </div>
+        </div>
     </nav>
 
 
     <!-- HERO SECTION -->
-    <section id="hero" class="hero">
-        <div class="slider">
-            <img src="img/moody-model.png">
-            <div class="hero--shadow"></div>
+    <section id="hero" class="hero" style="height: 50vh;">
+        <div class="hero__info">
+            <div class="hero__title">
+                <p>MoodyV1</p>
+            </div>
+            <div class="hero__text">
+                <p>You can controll robot now!</p>
+            </div>
         </div>
+        <div class="hero__subpage">
+            <div class="hero__card hero__card--1"></div>
+        </div>
+        <div class="hero--shadow"></div>
     </section>
 
 
-    <!-- MAIN SECTION -->
-    <section id="main" class="main">
+
+    <section id="" class="">
         <div class="wall" style="">
             <div class="container">
-                <div class="section-title">Shorts 🩳
+                <div class="section-title">
+                    Controll Panel
                 </div>
-    
+                <div class="" style="height: 50vh;"></div>
             </div>
         </div>
     </section>
@@ -50,8 +101,21 @@
     <!-- CONTACT SECTION -->
     <section id="contact" class="contact">
         <div class="container">
-            <div class="section-title">Contact</div>
-
+            <div class="section-title">Developers</div>
+            <div class="contact__box">
+                <div class="contact__card--one contact__card">
+                    <h3>Michal Kurek <i data-feather="tool"></i></h3>
+                    <p>+48 000 000 000 <i data-feather="smartphone"></i></p>
+                    <p>email@gmail.com <i data-feather="at-sign"></i></p>
+                    <a href="https://github.com/TheKureq">Github <i data-feather="github"></i></a>
+                </div>
+                <div class="contact__card--two contact__card">
+                    <h3>Samir Abu Safieh <i data-feather="cpu"></i></h3>
+                    <p>+48 000 000 000 <i data-feather="smartphone"></i></p>
+                    <p>email@gmail.com <i data-feather="at-sign"></i></p>
+                    <a href="https://github.com/Samir420692137">Github <i data-feather="github"></i></a>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -59,13 +123,22 @@
     <!-- FOOTER SECTION -->
     <footer>
         <div class="footer">
-            <p>MoodyWeb &copy; <span class="footer--year">2022</span><br> Michał Kurek & Samir Abu Safieh</p>
+            <p>MoodyWeb &copy; <span class="footer--year">2022</span><br> Michal Kurek & Samir Abu Safieh</p>
         </div>
 
 
     </footer>
 
+    <script>
+        feather.replace()
+    </script>
+
+
     <script src="./js/main.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/slicksettings.js"></script>
 </body>
 
 </html>
