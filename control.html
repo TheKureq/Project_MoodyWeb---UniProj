@@ -75,7 +75,7 @@
                 <p>MoodyV1</p>
             </div>
             <div class="hero__text">
-                <p>You can controll robot now!</p>
+                <p>You can control robot now!</p>
             </div>
         </div>
         <div class="hero__subpage">
@@ -85,25 +85,43 @@
     </section>
 
 
-
-    <section id="" class="">
-        <div class="wall" style="">
-            <div class="container">
-                <div class="section-title">
-                    Controll Panel
-                </div>
-
-                <div class="buttons" >
-                    <button class="led" id="5" style="height: 100px; width:200px;">LEDon</button>
-                    <button class="led" id="6" style="height: 100px; width:200px;">LEDoff</button>
-
-                    <div class="slidecontainer led">
-                        <input type="range" min="0" max="180" value="50" class="slider" id="myRange">
-                      </div>
-                </div>
-
-                <div class="" style="height: 50vh;"></div>
+    <!-- CONTROL SSECTION -->
+    <section id="control" class="control">
+        <div class="container">
+            <div class="section-title">
+                Control Panel
             </div>
+            <div class="control__box">
+                <div class="buttons">
+                    <button class="button" value="1001" style="height: 50px; width:100px; border-radius: 10px;">Axis
+                        1</button>
+                    <button class="button" value="1002" style="height: 50px; width:100px; border-radius: 10px;">Axis
+                        2</button>
+                    <button class="button" value="1003" style="height: 50px; width:100px; border-radius: 10px;">Axis
+                        3</button>
+                    <button class="button" value="1004" style="height: 50px; width:100px; border-radius: 10px;">Axis
+                        4</button>
+                    <button class="button" value="1005" style="height: 50px; width:100px; border-radius: 10px;">Axis
+                        5</button>
+
+                    <div class="slidecontainer">
+                        <div class="axis-slider"><input type="range" min="0" max="180" value="50" class="axis1"
+                                id="myRange"> Axis 1</div>
+                        <div class="axis-slider"><input type="range" min="0" max="180" value="50" class="axis2"
+                                id="myRange"> Axis 2</div>
+                        <div class="axis-slider"><input type="range" min="0" max="180" value="50" class="axis3"
+                                id="myRange"> Axis 3</div>
+                        <div class="axis-slider"><input type="range" min="90" max="180" value="50" class="axis4"
+                                id="myRange"> Axis 4</div>
+                        <div class="axis-slider"><input type="range" min="90" max="180" value="50" class="axis5"
+                                id="myRange"> Axis 5</div>
+                    </div>
+                </div>
+                <div class="visualization">
+
+                </div>
+            </div>
+            <div class="" style="height: 50vh;"></div>
         </div>
     </section>
 
