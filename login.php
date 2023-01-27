@@ -1,11 +1,9 @@
-    <?php
-            // $conn = new mysqli("sql206.epizy.com","epiz_32996187","ix2qb14ski","epiz_32996187_rejestracja");
-            // $conn->set_charset("utf8");
+<?php
             $conn = new mysqli("localhost","root","","test");
             $conn->set_charset("utf8");
 
         //Zapamiętuje strona że sie logowaliśmy 
-        session_start();
+        // session_start();
 
         if(isset ($_SESSION["nazwa"]) && isset($_GET["logout"]))
         {
@@ -15,7 +13,10 @@
             exit();
 
         }
-        
+       
+        $login2 = $_POST["nazwa"];
+        $password = $_POST["password"];
+        $password = md5($password); 
     
         if(isset ($_POST["button"]))
         {
@@ -35,13 +36,11 @@
           
                 else
                 {
-                     $error = "Wyepłnij wszystkie pola";        
+                
+                    $err = 'Błąd logowania błedy login lub hasło';
+                    header("Location: login1.php");
                 }
         }
-
-            $login2 = $_POST["nazwa"];
-            $password = $_POST["password"];
-            $password = md5($password);
 
             $sql = "SELECT * FROM rejestracja WHERE login='$login2' AND password='$password'";
             $result = mysqli_query($conn, $sql);
@@ -57,11 +56,25 @@
                         header("Location: control.php");
                         exit();
                     }
+                    else
+                    {
+                      
+                    $err = 'Wrong Login or Password';
+                    
+
+                    }
                 }
+                else
+                    {
+                      
+                    $err = 'Wrong Login or Password';
+                    
+
+                    }
             }   
             else
             {
-                $error = "Błąd logowania błedy login lub hasło";
+                $err = 'Wrong Login or Password';
             }
         
     ?>

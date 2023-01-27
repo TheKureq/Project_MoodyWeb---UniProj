@@ -14,7 +14,7 @@
             {
 
                 echo '<li><a class="navi" href="control.php">CONTROL PANEL</a></li>';
-                echo '<li><a class="navi__logout-btn" href="logout.php">WYLOGUJ</a></li>';
+                echo '<li><a class="navi__logout-btn" href="logout.php">LOG OUT</a></li>';
             }
             else
             {
@@ -52,7 +52,7 @@
             {
 
                 echo '<li><a class="navi" href="control.php">CONTROL PANEL</a></li>';
-                echo '<li><a class="navi__logout-btn" href="logout.php">WYLOGUJ</a></li>';
+                echo '<li><a class="navi__logout-btn" href="logout.php">LOG OUT</a></li>';
             }
             else
             {

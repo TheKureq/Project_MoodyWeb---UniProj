@@ -12,13 +12,10 @@
     <link rel="stylesheet" href="./css/pumpkin.css">
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
-
     <script src="https://unpkg.com/feather-icons"></script>
 </head>
 
 <body>
-
-
     <!-- NAVIGATION SECTION -->
     <?php include 'navigation.php';?>
 
@@ -44,15 +41,25 @@
         <div class="wall" style="">
             <div class="container">
                 <div class="section-title">
-                    login
-                </div>
+                    login 
+                </div>            
+                <?php
+               if(isset ($_POST["button"]))
+               {
+                    require("login.php");
+                    if(isset($err))
+                    {
+                        print "<p class='error'>$err</p>";
+                    }
+                }
+                ?>
                 <div class="login__box">
-                    <form action="login.php" method="post" class="login__form">
+       
+                    <form action="login1.php" method="post" class="login__form">
                         <div class="login__login">
                             <label for="login">Login</label>
                             <input type="text" class="login" name="nazwa">
                         </div>
-                        
                         <div class="login__password">
                             <label for="password">Password</label>
                             <input type="password" class="password" name="password">
@@ -61,11 +68,11 @@
                             <span></span>
                             <input type="submit" class="button" name="button" value="Login">
                         </div>
-
                         <p style="font-size: 1rem">To register new account, you have to contact one of developers!</p>
                     </form>
                 </div>
-                
+
+
             </div>
         </div>
     </section>

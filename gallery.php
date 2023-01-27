@@ -13,6 +13,10 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
 
     <script src="https://unpkg.com/feather-icons"></script>
+
+    <link href="css/lightbox.css" rel="stylesheet">
+    <link href="css/lightbox.min.css" rel="stylesheet">
+    <script src="js/lightbox-plus-jquery.js"></script>
 </head>
 
 <body>
@@ -28,11 +32,7 @@
                 <p>MoodyV1</p>
             </div>
             <div class="hero__text">
-<<<<<<< HEAD:gallery.php
                 <p>You are in gallery section, enjoy!</p>
-=======
-                <p>You can control robot now!</p>
->>>>>>> b64b1fde5fceb67526597633a6218113f9e3a6da:control.html
             </div>
         </div>
         <div class="hero__subpage">
@@ -40,56 +40,37 @@
         </div>
         <div class="hero--shadow"></div>
     </section>
+    <section id="login" class="login">
+    <?php
 
+    if(isset($_SESSION['nazwa']))
+    {
 
-<<<<<<< HEAD:gallery.php
+        print '    <div class="file-label"><form action="gallery1.php" method="POST" enctype="multipart/form-data" class="login__form">'; 
+        print '        <input type="file" class="file" id="file" name="obraz" >';
+        print '        <label for="file">Select File</label>';
+        print '        <input type="submit" name="submit" class="button" value="ADD PHOTO">';
+        print '    </form></div>';
 
-    <section id="" class="">
-        <div class="wall" style="">
-            <div class="container">
-                <div class="section-title">
-                    Gallery
-                </div>
-                <div class="" style="height: 50vh;"></div>
-=======
-    <!-- CONTROL SSECTION -->
-    <section id="control" class="control">
-        <div class="container">
-            <div class="section-title">
-                Control Panel
->>>>>>> b64b1fde5fceb67526597633a6218113f9e3a6da:control.html
+    }
+    ?>
+    </div>
+    </section>
+        <div class="gallery">
+        <div class="section-title">gallery</div>
+        <?php
+                $conn = new mysqli("localhost","root","","test");
+                $conn->set_charset("utf8");
+                $result = $conn->query("SELECT * FROM zdjecia");
+                while ($row = $result->fetch_assoc())
+                {
+                    $obraz = $row["obraz"];
+                    print "<a class='photo_galery' href='$obraz' data-lightbox='foto1' data-title='Moody'>";
+                    print "<img src='$obraz' alt='' height='200'></img></a>";
+                }
+            ?>
             </div>
-            <div class="control__box">
-                <div class="buttons">
-                    <button class="button" value="1001" style="height: 50px; width:100px; border-radius: 10px;">Axis
-                        1</button>
-                    <button class="button" value="1002" style="height: 50px; width:100px; border-radius: 10px;">Axis
-                        2</button>
-                    <button class="button" value="1003" style="height: 50px; width:100px; border-radius: 10px;">Axis
-                        3</button>
-                    <button class="button" value="1004" style="height: 50px; width:100px; border-radius: 10px;">Axis
-                        4</button>
-                    <button class="button" value="1005" style="height: 50px; width:100px; border-radius: 10px;">Axis
-                        5</button>
-
-                    <div class="slidecontainer">
-                        <div class="axis-slider"><input type="range" min="0" max="180" value="50" class="axis1"
-                                id="myRange"> Axis 1</div>
-                        <div class="axis-slider"><input type="range" min="0" max="180" value="50" class="axis2"
-                                id="myRange"> Axis 2</div>
-                        <div class="axis-slider"><input type="range" min="0" max="180" value="50" class="axis3"
-                                id="myRange"> Axis 3</div>
-                        <div class="axis-slider"><input type="range" min="90" max="180" value="50" class="axis4"
-                                id="myRange"> Axis 4</div>
-                        <div class="axis-slider"><input type="range" min="90" max="180" value="50" class="axis5"
-                                id="myRange"> Axis 5</div>
-                    </div>
-                </div>
-                <div class="visualization">
-
-                </div>
             </div>
-            <div class="" style="height: 50vh;"></div>
         </div>
     </section>
 

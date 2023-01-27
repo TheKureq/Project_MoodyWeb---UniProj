@@ -38,37 +38,76 @@
     </section>
 
 
-    <section id="" class="">
-        <div class="wall" style="">
+    <section id="about" class="about">
+        <div class="wall">
             <div class="container">
                 <div class="section-title">
                     About project
                 </div>
                 <div class="about__info">
                     <div class="about__title">
-                        <h2>Lorem, ipsum.</h2>
+                        <h2>Week 1</h2>
                     </div>
                     <div class="about__text">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae perspiciatis accusantium excepturi reprehenderit esse ea enim delectus itaque corrupti, libero consequuntur nihil, non ipsam dolore placeat illo eos dolorem architecto laborum officiis, facere nemo ab omnis! Illum iusto neque placeat, voluptas facilis necessitatibus alias ullam rem. Debitis sequi porro praesentium dolorum at quae. Assumenda atque illum neque dolore numquam est culpa iste hic, maiores illo vero quae autem reprehenderit eum alias dolor quibusdam aperiam aliquid recusandae laborum officiis et optio dignissimos. Aliquam sit deserunt itaque ullam amet perspiciatis sequi, placeat tenetur voluptate qui odit natus optio eum repellendus cumque obcaecati.</p>
+                        <p>Today is October 24th 2022 and we started to learn the basics of website development. We are doing courses of html, css and sass. We build simple file structure of our project website and talked about the colors and main theme. Today we alos created github reposytory and created a host for our future website and learn how to use Github and all of its usefull commends. So ye lots of learning in this week.</p>
                     </div>
                 </div>
                 <div class="about__info">
                     <div class="about__title">
-                        <h2>Lorem, ipsum.</h2>
+                        <h2>Week 2</h2>
                     </div>
                     <div class="about__text">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae perspiciatis accusantium excepturi reprehenderit esse ea enim delectus itaque corrupti, libero consequuntur nihil, non ipsam dolore placeat illo eos dolorem architecto laborum officiis, facere nemo ab omnis! Illum iusto neque placeat, voluptas facilis necessitatibus alias ullam rem. Debitis sequi porro praesentium dolorum at quae. Assumenda atque illum neque dolore numquam est culpa iste hic, maiores illo vero quae autem reprehenderit eum alias dolor quibusdam aperiam aliquid recusandae laborum officiis et optio dignissimos. Aliquam sit deserunt itaque ullam amet perspiciatis sequi, placeat tenetur voluptate qui odit natus optio eum repellendus cumque obcaecati.</p>
+                        <p>After all those courses and learning we finally started to develop our webiste. It might not look great and not so professional but we are just getting started. Everything is going according to our schedule. When you are reading it our wabsite will probable be very diffrent so be sure to check our gallery page to see how it all started.</p>
                     </div>
                 </div>
                 <div class="about__info">
                     <div class="about__title">
-                        <h2>Lorem, ipsum.</h2>
+                        <h2>Week 3</h2>
                     </div>
                     <div class="about__text">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae perspiciatis accusantium excepturi reprehenderit esse ea enim delectus itaque corrupti, libero consequuntur nihil, non ipsam dolore placeat illo eos dolorem architecto laborum officiis, facere nemo ab omnis! Illum iusto neque placeat, voluptas facilis necessitatibus alias ullam rem. Debitis sequi porro praesentium dolorum at quae. Assumenda atque illum neque dolore numquam est culpa iste hic, maiores illo vero quae autem reprehenderit eum alias dolor quibusdam aperiam aliquid recusandae laborum officiis et optio dignissimos. Aliquam sit deserunt itaque ullam amet perspiciatis sequi, placeat tenetur voluptate qui odit natus optio eum repellendus cumque obcaecati.</p>
+                        <p>We made some huge proggres in our website design. Night and Day difference. But appart from that we made simple login menu and database by using SQL and PHP languages. All of that will be used to acces control panel to our Robotic Arm "Moody". Unfortunately we run into some problems with Githubhosting. It just wasn’t working thereandwe will have to do everything on a localhost and maybe in the future we will make our website work on a normal hosting that we rent for free.</p>
                     </div>
                 </div>
-                
+                <div class="about__info">
+                    <div class="about__title">
+                        <h2>Week 4</h2>
+                    </div>
+                    <div class="about__text">
+                        <p>This week was less work more learning. Since we want to make our Robot be controlled via website we first have to learn on how to do it. So in this week we where learing JS programing by doing online courses and by watching some youtube videos. But that doesn't mean we didn't do anything. While learing we made simple JS compontent that we implemented to our webiste. One of them is that beautiful slider you can see above. To make it work we had to implement jQuerry library. We also made our website work and look good on mobile phones.</p>
+                    </div>
+                </div>
+                <div class="about__info">
+                    <div class="about__title">
+                        <h2>Week 5</h2>
+                    </div>
+                    <div class="about__text">
+                        <p>This week of work we made our website wrok and look good on every phone there is on the market! We also started to design the control panel. We also forogot to add security our loging system. We did so by hashing password in database. We designed and coded in css custom made graphics to our control panel.</p>
+                    </div>
+                </div> 
+                <div class="about__info">
+                    <div class="about__title">
+                        <h2>Week 6</h2>
+                    </div>
+                    <div class="about__text">
+                        <p>We had to make our website work with robot. So now we are focused on how to do it. It took a lot time and mental but we did it. Our robot and website are connected by wifi!!</p>
+                    </div>
+                </div> 
+                <div class="about__info">
+                    <div class="about__title">
+                        <h2>Week 7</h2>
+                    </div>
+                    <div class="about__text">
+                        <p>Since everything that is important is done we focused on other subpages. We added our blog to this subpage and also created and designed gallery with menu to add photos for admin. We also started one of our optionals projects and and made a sequence menu that is looking great and working very smooth.</p>
+                    </div>
+                </div> 
+                <div class="about__info">
+                    <div class="about__title">
+                        <h2>Week 8</h2>
+                    </div>
+                    <div class="about__text">
+                        <p>This week we made a major progress. Our sequence menu is fully working and you can program the robot from the website and creat you own moving patterns for MOODY!!! Since we have really much learning and a lot of exams this week we couldn't make the sequences get saved. But for our last IT classes we will do it 100%.</p>
+                    </div>
+                </div> 
             </div>
         </div>
     </section>

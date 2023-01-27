@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./css/pumpkin.css">
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <script src="https://unpkg.com/feather-icons"></script>
 </head>
 
@@ -62,10 +63,18 @@
                         <div class="shorts__title">Current we are working on:</div>
                         <div class="shorts__info">
                             <ul>
-                                <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></li>
-                                <li><p>orem ipsum, dolor sit amet consectetur adipisicing elit. Hic, magnam?</p> </li>
-                                <li><p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p></li>
-                                <li><p>Lorem ipsum dolor sit amet.</p></li>
+                                <li>
+                                    <p>Sequence system, with database</p>
+                                </li>
+                                <li>
+                                    <p>database security</p>
+                                </li>
+                                <li>
+                                    <p>responsivenes of the website</p>
+                                </li>
+                                <li>
+                                    <p>web apperance</p>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -74,34 +83,39 @@
                         <div class="shorts__title">Future development plan:</div>
                         <div class="shorts__info">
                             <ul>
-                                <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></li>
-                                <li><p>orem ipsum, dolor sit amet consectetur adipisicing elit. Hic, magnam?</p> </li>
-                                <li><p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p></li>
-                                <li><p>Lorem ipsum dolor sit amet.</p></li>
+                                <li>
+                                    <p>Go online, place website in some hosting</p>
+                                </li>
+                                <li>
+                                    <p>Inverse kinematics in control panel</p>
+                                </li>
+                                <li>
+                                    <p>Learning mode in control panel</p>
+                                </li>
+                                <li>
+                                    <p>Registration - user system to allow control your own moody!</p>
+                                </li>
                             </ul>
                         </div>
                     </div>
+                </div>
+                <div class="shorts__box">
                     <div class="shorts__card">
                         <div class="shorts__img"></div>
-                        <div class="shorts__title">Basic statistics:</div>
+                        <div class="shorts__title">Main links:</div>
                         <div class="shorts__info">
-                            <ul>
-                                <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></li>
-                                <li><p>orem ipsum, dolor sit amet consectetur adipisicing elit. Hic, magnam?</p> </li>
-                                <li><p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p></li>
-                                <li><p>Lorem ipsum dolor sit amet.</p></li>
-                            </ul>
+                            <a href="./control.php"><i data-feather="sliders"></i></a>
+                            <a href="./about.php"><i data-feather="info"></i></a>
+                            <a href="./gallery.php"><i data-feather="grid"></i></a>  
+                            </div>
                         </div>
-                    </div>
-                    <div class="shorts__card">
-                        <div class="shorts__img"></div>
-                        <div class="shorts__title">Login status: 'variable__status'</div>
-                        <div class="shorts__info">
-                            <ul>
-                                <li><p>user: </p></li>
-                                <li><p>using hours: </p> </li>
-                                <li><p>permitions: </p></li>
-                            </ul>
+                        <div class="shorts__card">
+                            <div class="shorts__img"></div>
+                            <div class="shorts__title">Other links:</div>
+                            <div class="shorts__info">
+                                <a href="https://youtube.com"><i data-feather="youtube"></i></a>
+                                <a href="https://www.instagram.com/kurek_workshop/"><i data-feather="instagram"></i></a>
+                                <a href="https://github.com/TheKureq"><i data-feather="github"></i></a>                         
                         </div>
                     </div>
                 </div>
@@ -142,7 +156,7 @@
     </footer>
 
     <script>
-        feather.replace()
+    feather.replace()
     </script>
 
 

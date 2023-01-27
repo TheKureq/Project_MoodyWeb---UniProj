@@ -13,6 +13,9 @@
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <script src="https://unpkg.com/feather-icons"></script>
 </head>
 
@@ -56,9 +59,13 @@
             <div class="section-title">
                 Control Panel
             </div>
+            <div class="control__info">
+                <h3>Here you can manualy control Moody!</h3>
+                <p>Remember to provide ip adress of your localhost</p>
+            </div>
             <div class="control__box">
                 <div class="control__ip-box">
-                    <input type="text" name="ip-adress" id="ip" class="ip" value="10.0.0.12" placeholder="ip adress">
+                    <input type="text" name="ip-adress" id="ip" class="ip" value="172.20.10.8" placeholder="ip adress">
                 </div>
                 <div class="control__buttons">
                     <button class="button btn" value="1001">Axis
@@ -77,12 +84,12 @@
                         Demo</button>
                     <button class="button btn" value="1008">
                         Seq 1</button>
-                    <button class="button btn" value="1009">
-                    Seq 2</button>
-                    <!-- <button class="button btn" value="1010">
-                    Seq 3</button> -->
-                        
-                    <button class="button btn btn--estop" value="1008">
+                    <button class="button btn" value="1011">
+                        Magic</button>
+                    <button class="button btn zero" value="1010">
+                        Zero</button>
+
+                    <button class="button btn btn--estop" value="1009">
                         E-Stop</button>
 
                     <div class="slidecontainer">
@@ -90,7 +97,7 @@
                             Axis 1 Value: <span class="axis__value1 axis__value"></span></div>
                         <div><input class="axis2 axis-slider" type="range" min="0" max="180" value="90" id="myRange">
                             Axis 2 Value: <span class="axis__value2 axis__value"></span></div>
-                        <div><input class="axis3 axis-slider" type="range" min="0" max="160" value="80" id="myRange">
+                        <div><input class="axis3 axis-slider" type="range" min="0" max="180" value="90" id="myRange">
                             Axis 3 Value: <span class="axis__value3 axis__value"></span></div>
                         <div><input class="axis4 axis-slider" type="range" min="0" max="150" value="75" id="myRange">
                             Axis 4 Value: <span class="axis__value4 axis__value"></span></div>
@@ -105,6 +112,87 @@
                 </div>
             </div>
         </div>
+    </section>
+
+    <section id="sequence" class="sequence">
+        <div class="container">
+            <div class="section-title">
+                Sequence maker
+            </div>
+            <div class="sequence__info">
+                <h3>You can drag tasks to sequence area, and program Moody!</h3>
+                <p>Remember to provide ip adress of your localhost</p>
+            </div>
+            <div class="sequence__box">
+                <div class="sequence__programs">
+                    <div class="sequence__program task1" id="src_copy-1" draggable="true" value="A"
+                        ondragstart="onDragStart(event)">
+                        <p>turn one axis</p>
+                    </div>
+                    <div class="sequence__program task2" id="src_copy-2" draggable="true" value="B"
+                        ondragstart="onDragStart(event)">
+                        <p>turn two axis</p>
+                    </div>
+                    <div class="sequence__program task3" id="src_copy-3" draggable="true" value="C"
+                        ondragstart="onDragStart(event)">
+                        <p>close Gripper</p>
+                    </div>
+                    <div class="sequence__program task4" id="src_copy-4" draggable="true" value="D"
+                        ondragstart="onDragStart(event)">
+                        <p>open Gripper</p>
+                    </div>
+                    <div class="sequence__program task5" id="src_copy-5" draggable="true" value="E"
+                        ondragstart="onDragStart(event)">
+                        <p>position zero</p>
+                    </div>
+                    <div class="sequence__program task6" id="src_copy-6" draggable="true" value="F"
+                        ondragstart="onDragStart(event)">
+                        <p>delay</p>
+                    </div>
+                </div>
+                <div class="sequence__sequence container-test" id="dest_copy" ondragover="onDragOver(event);"
+                    ondrop="onDrop(event)" draggable="false">
+                    <p class="info" id="test">You can drag task here!</p>
+
+                </div>
+
+
+                <div class="sequence__submit">
+                    <div class="sequence__btn">
+                        <button class="btn btn--red btnStop" value="1201">Stop sequence</button>
+                    </div>
+                    <div class="sequence__btn">
+                        <button class="btn btnStart" value="1200">Start sequence</button>
+                    </div>
+                    <div class="sequence__loop">
+                        <div class="sequence__loop-info">Loop: </div>
+                        <div class="sequence__loop-checkbox">
+                            <div class="button b2" id="button-16">
+                                <input type="checkbox" class="checkbox" id="loop"/>
+                                <div class="knobs"></div>
+                                <div class="layer"></div>
+                            </div>
+                        </div>
+
+
+                        
+                    </div>
+                </div>
+    </section>
+
+    <!-- KINEMATICS SECTION -->
+    <section id="kinematics" class="kinematics">
+        <div class="kinematics__hero"></div>
+        <div class="kinematics__info">
+            <div class="kinematics__title">
+                <p>Inverse Kinematics Control</p>
+            </div>
+            <div class="kinematics__text">
+                <p>In development!</p>
+            </div>
+        </div>
+
+        <div class="kinematics--shadow"></div>
     </section>
 
 
@@ -143,6 +231,8 @@
     feather.replace()
     </script>
 
+    <!-- <script src="./js/sequences_move.js"></script> -->
+    <script src="./js/sequences.js"></script>
     <script src="./js/slider.js"></script>
     <script src="./js/jquery.min.js"></script>
     <script src="./js/control.js"></script>

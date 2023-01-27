@@ -1,0 +1,8 @@
+Aby odpalic stronę internetową należy włączyć localhost w xammp.
+
+Należy zaimportować baze danych, aby poprawnie zalogowac sie do control panelu.
+
+Login i haslo:
+L: admin
+H: admin
+
