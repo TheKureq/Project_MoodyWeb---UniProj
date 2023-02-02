@@ -12,7 +12,7 @@ Demo of mobile view (RWD) available on yt:
 https://youtu.be/R4d6pFB0mFg
 
 Phisical robotic arm available on my instagram:
-https://www.instagram.com/kurek_the_creator/
+https://www.instagram.com/kurek_workshop/
 
 To run a website you need to start apache server and import database "test.sql" because of php files.
 
