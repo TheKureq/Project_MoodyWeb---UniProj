@@ -1,4 +1,4 @@
-﻿# UniversityProject_Website
+﻿# UniversityProject_Website MoodyWeb
  
 Website created for controling phisical model of 5-axis robot "Moody". By control panel and sequence maker (js drag and drop) you can remotely fully control Robot. 
 
@@ -10,6 +10,9 @@ https://youtu.be/ABPP3NOwb5I
 
 Demo of mobile view (RWD) available on yt:
 https://youtu.be/R4d6pFB0mFg
+
+Phisical robotic arm available on my instagram:
+https://www.instagram.com/kurek_the_creator/
 
 To run a website you need to start apache server and import database "test.sql" because of php files.
 
