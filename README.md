@@ -1,9 +1,12 @@
 ﻿# UniversityProject_Website
+ 
+Website created for controling phisical model of 5-axis robot "Moody". By control panel and sequence maker (js drag and drop) you can remotely fully control Robot. 
 
-https://thekureq.github.io/UniversityProject_Website/
+Video showing how website works (sequence maker tool presentation) will be available soon.
 
+To run a website you need to start apache server and import database "test.sql".
 
-Login do kontrol panelu:
+Login for control panel:
 
 LOGIN: admin
 PASS: admin
