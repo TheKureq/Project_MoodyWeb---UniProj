@@ -6,7 +6,7 @@ Video showing how website works (sequence maker tool presentation) will be avail
 
 ![2023-02-02 15-21-40](https://user-images.githubusercontent.com/81649868/216354596-64dfba33-ee67-4a57-b7c4-c0fbe3e744b7.gif)
 
-Video of sequence maker (js drag and drop technology):
+Video of reactive universal sequence maker (vanila js drag and drop technology):
 
 https://user-images.githubusercontent.com/81649868/216361571-050e9047-5cbe-41d3-8781-4a10b7248bef.mp4
 
