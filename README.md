@@ -22,6 +22,16 @@ https://www.instagram.com/kurek_workshop/
 
 To run a website you need to start apache server and import database "test.sql" because of php files.
 
+Technologies:
+- HTML/CSS
+- JavaScript
+- Sass
+- SQL
+- PHP
+- Git
+- RWD
+- C++
+
 Login for control panel:
 
 LOGIN: admin
